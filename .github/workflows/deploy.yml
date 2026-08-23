@@ -1,10 +1,6 @@
 name: Build
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push, pull_request, workflow_dispatch, schedule]
 
 permissions: write-all
 
@@ -27,5 +23,3 @@ jobs:
         env:
           PRIVATE_MAVEN_REPO_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           PRIVATE_MAVEN_REPO_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
-
-
