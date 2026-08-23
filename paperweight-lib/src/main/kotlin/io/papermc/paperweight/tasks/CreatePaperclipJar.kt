@@ -70,7 +70,6 @@ abstract class CreatePaperclipJar : JavaLauncherZippedTask() {
     @get:Input
     abstract val rootProjectName: Property<String>
 
-
     override fun init() {
         super.init()
 

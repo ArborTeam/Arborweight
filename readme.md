@@ -5,7 +5,7 @@
 - `paperweight-patcher`: Used to create forks of Paper or other `paperweight-patcher`-based forks
 - `paperweight-userdev`: Used to develop internals plugins using Mojang mappings
 
-### How to use this for testing:
+### How to use this for testing: 
 
 - Install `paperweight` to Maven Local:
 ```bash

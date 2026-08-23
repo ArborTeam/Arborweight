@@ -101,13 +101,13 @@ val isSnapshot = project.version.toString().endsWith("-SNAPSHOT")
 publishing {
     repositories {
             val url = if (isSnapshot) {
-                "https://repo.menthamc.org/repository/maven-snapshots/"
+                "https://repo.littleovo.cn/snapshots/"
             } else {
-                "https://repo.menthamc.org/repository/maven-releases/"
+                "https://repo.littleovo.cn/releases/"
             }
 
             maven(url) {
-                name = "MenthaMC"
+                name = "littleovo"
                 credentials(PasswordCredentials::class) {
                     username = System.getenv("PRIVATE_MAVEN_REPO_USERNAME")
                     password = System.getenv("PRIVATE_MAVEN_REPO_PASSWORD")
