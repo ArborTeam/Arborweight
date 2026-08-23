@@ -52,8 +52,8 @@ val sourcesJar by tasks.existing(AbstractArchiveTask::class) {
 }
 
 gradlePlugin {
-    website.set("https://github.com/LuminolMC/hyacinthusweight")
-    vcsUrl.set("https://github.com/LuminolMC/hyacinthusweight")
+    website.set("https://github.com/arborteam/arborweight")
+    vcsUrl.set("https://github.com/arborteam/arborweight")
 }
 
 val shadowJar by tasks.existing(ShadowJar::class) {
@@ -125,11 +125,11 @@ publishing {
 }
 
 fun MavenPom.pomConfig() {
-    val repoPath = "LuminolMC/hyacinthusweight"
+    val repoPath = "arborteam/arborweight"
     val repoUrl = "https://github.com/$repoPath"
 
-    name.set("hyacinthusweight")
-    description.set("Gradle plugin for the LuminolMC project")
+    name.set("arborweight")
+    description.set("Gradle plugin for the arborteam project")
     url.set(repoUrl)
     inceptionYear.set("2020")
 
