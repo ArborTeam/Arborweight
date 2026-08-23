@@ -18,7 +18,6 @@ jobs:
           distribution: zulu
           java-version: 25
       - name: Publish to repo
-        if: github.event_name != 'pull_request'
         run: ./gradlew publish --no-daemon --stacktrace --no-configuration-cache
         env:
           PRIVATE_MAVEN_REPO_USERNAME: ${{ secrets.MAVEN_USERNAME }}
